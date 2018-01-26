@@ -53,3 +53,71 @@ development workflow
 etc)
 
 > _Note: You can add more commands by adding extra entries into the `scripts` attribute of your `package.json` file_)
+
+## Development
+
+When developing CSS rules, the best option is to use Bootstrap's mixins to create semantic classes for your project. 
+This way, instead of using thousands of class names in your HTML, you'd go for only one, having a more concise HTML 
+and CSS for the project (as you would not have all the Bootstrap CSS loaded in your final CSS file).
+
+For a more in-depth usage of Bootstrap's mixins, please, visit their [documentation website](https://getbootstrap.com/docs/4.0/)
+for each component or layout structure you want to use.
+
+### Example code
+The following code example... 
+```scss
+.main-content {
+  @include make-container();
+}
+```
+...would compile into:
+```css
+.main-content {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+```
+Thus, one would not need to use the class `.container` on the page. 
+
+This is a simplistic example. However, when you have a HTML element `div.col-3.col-lg-4` to be your aside column, you 
+could make a semantic class `.aside` that behaves exactly the mix of `.col-3` and `.col-lg-4`. To do so, you'd do as 
+the following code example:
+
+```scss
+.aside {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(3)
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4)
+  }
+}
+```
+Which, in turn, would generate the following CSS in `dist/css/app.css`:
+```css
+.aside {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .aside {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .aside {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+```
