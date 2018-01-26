@@ -1,0 +1,35 @@
+{
+  "name": "nintendo-webstrap",
+  "version": "0.0.1",
+  "description": "simple webpack + bootstrap 4 (webstrap) project",
+  "scripts": {
+    "build": "webpack --progress --config webpack.config.js",
+    "watch": "webpack --hide-modules --watch --config webpack.config.js",
+    "prod": "webpack --progress -p --config webpack.config.js"
+  },
+  "author": "Erick Alvarenga (erick.alvarenga@nintendo.de)",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-loader": "^2.2.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.0.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  }
+}

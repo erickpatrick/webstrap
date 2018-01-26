@@ -1,0 +1,74 @@
+logLevel: debug
+bootstrapVersion: 4
+extractStyles: true
+useFlexbox: true
+styleLoaders:
+  - style-loader
+  - css-loader
+  - sass-loader
+  - postcss-loader
+
+## Bootstrap customizations
+preBootstrapCustomizations: ./src/scss/_variables.scss
+appStyles: ./src/scss/app.scss
+
+### Bootstrap styles
+styles:
+
+  # Mixins
+  mixins: true
+
+  # Reset and dependencies
+  print: false
+
+  # Core CSS
+  buttons: false
+  code: false
+  forms: false
+  grid: false
+  images: false
+  reboot: false
+  tables: false
+  type: false
+
+  # Components
+  alert: false
+  badge: false
+  breadcrumb: false
+  button-group: false
+  card: false
+  close: false
+  custom-forms: false
+  dropdown: false
+  input-group: false
+  jumbotron: false
+  list-group: false
+  media: false
+  nav: false
+  navbar: false
+  pagination: false
+  progress: false
+  transitions: false
+
+  # Components w/ JavaScript
+  carousel: false
+  modal: false
+  popover: false
+  tooltip: false
+
+  # Utility classes
+  utilities: false
+
+### Bootstrap scripts
+scripts:
+  alert: false
+  button: true
+  carousel: false
+  collapse: false
+  dropdown: false
+  modal: false
+  popover: false
+  scrollspy: false
+  tab: false
+  tooltip: false
+  util: false
