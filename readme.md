@@ -7,11 +7,11 @@ scripts in a per component basis.
 ## Installation
 Install with npm:
 ```
-npm install --save-dev webstrap
+npm install --save-dev webstraper
 ```
 Install with yarn:
 ```
-yarn add webstrap --dev
+yarn add webstraper --dev
 ```
 
 ## Technology used
