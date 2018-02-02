@@ -7,6 +7,15 @@
     "watch": "webpack --hide-modules --watch --config webpack.config.js",
     "prod": "webpack --progress -p --config webpack.config.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erickpatrick/webstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erickpatrick/webstrap/issues"
+  },
+  "keywords": ["webpack", "bootstrap", "webstrap"],
+  "homepage": "https://github.com/erickpatrick/webstrap",
   "author": "Erick Patrick (github@erickpatrick.net)",
   "license": "MIT",
   "dependencies": {
