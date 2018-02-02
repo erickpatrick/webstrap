@@ -1,5 +1,5 @@
 {
-  "name": "webstrap",
+  "name": "webstraper",
   "version": "0.0.1",
   "description": "simple webpack + bootstrap 4 (webstrap) project",
   "scripts": {
