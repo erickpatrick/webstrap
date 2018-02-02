@@ -4,6 +4,16 @@ This repo is a basic project using Webpack 3 to compile Bootstrap 4 enabled layo
 loads all the necessary dependencies and has a simple configuration to enable or disable Bootstrap 4 styles or
 scripts in a per component basis.
 
+## Installation
+Install with npm:
+```
+npm install --save-dev webstrap
+```
+Install with yarn:
+```
+yarn add webstrap --dev
+```
+
 ## Technology used
 - Webpack 3
 - Babel 6
