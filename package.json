@@ -1,5 +1,5 @@
 {
-  "name": "nintendo-webstrap",
+  "name": "webstrap",
   "version": "0.0.1",
   "description": "simple webpack + bootstrap 4 (webstrap) project",
   "scripts": {
@@ -7,7 +7,7 @@
     "watch": "webpack --hide-modules --watch --config webpack.config.js",
     "prod": "webpack --progress -p --config webpack.config.js"
   },
-  "author": "Erick Alvarenga (erick.alvarenga@nintendo.de)",
+  "author": "Erick Patrick (github@erickpatrick.net)",
   "license": "MIT",
   "dependencies": {
     "bootstrap-loader": "^2.2.0",
