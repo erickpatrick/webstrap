@@ -1,11 +1,11 @@
 {
   "name": "webstraper",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "simple webpack + bootstrap 4 (webstrap) project",
   "scripts": {
-    "build": "webpack --progress --config webpack.config.js",
-    "watch": "webpack --hide-modules --watch --config webpack.config.js",
-    "prod": "webpack --progress -p --config webpack.config.js"
+    "build": "webpack --mode development --config webpack.config.js",
+    "watch": "webpack",
+    "prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,11 @@
   "bugs": {
     "url": "https://github.com/erickpatrick/webstrap/issues"
   },
-  "keywords": ["webpack", "bootstrap", "webstrap"],
+  "keywords": [
+    "webpack",
+    "bootstrap",
+    "webstrap"
+  ],
   "homepage": "https://github.com/erickpatrick/webstrap",
   "author": "Erick Patrick (github@erickpatrick.net)",
   "license": "MIT",
@@ -24,21 +28,22 @@
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.3",
     "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^4.0.0",
-    "copy-webpack-plugin": "^4.3.1",
-    "css-loader": "^0.28.9",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
+    "bootstrap-loader": "^2.2.0",
+    "copy-webpack-plugin": "^4.4.2",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "file-loader": "^1.1.10",
     "node-sass": "^4.7.2",
-    "postcss-loader": "^2.0.10",
-    "resolve-url-loader": "^2.2.1",
+    "postcss-loader": "^2.1.1",
+    "resolve-url-loader": "^2.3.0",
     "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.1",
+    "style-loader": "^0.20.2",
     "url-loader": "^0.6.2",
-    "webpack": "^3.10.0"
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
   }
 }
