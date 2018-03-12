@@ -15,7 +15,7 @@ yarn add webstraper --dev
 ```
 
 ## Technology used
-- Webpack 3
+- Webpack 4
 - Babel 6
 - Bootstrap 4
 - Sass (via `*.scss`)
