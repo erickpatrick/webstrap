@@ -1,6 +1,6 @@
 {
   "name": "webstraper",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "simple webpack + bootstrap 4 (webstrap) project",
   "scripts": {
     "build": "webpack --mode development --config webpack.config.js",
