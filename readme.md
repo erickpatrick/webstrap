@@ -1,6 +1,6 @@
 # Webstrap
 
-This repo is a basic project using Webpack 3 to compile Bootstrap 4 enabled layouts (CSS and JavaScript wise). It 
+This repo is a basic project using Webpack 4 to compile Bootstrap 4 enabled layouts (CSS and JavaScript wise). It 
 loads all the necessary dependencies and has a simple configuration to enable or disable Bootstrap 4 styles or
 scripts in a per component basis.
 
